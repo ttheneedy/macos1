@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Programs - Green Valley High School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #280059be, #3b06b7a6);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+    }
+    .navbar {
+    background-color: #031e4b; /* Premier League background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px #38003c;
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white; /* White text color */
+    text-decoration: none;
+    font-size: 1.1rem; /* Font size */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+    .programs-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .program-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transform: scale(0.95);
+      opacity: 0;
+      animation: fadeInUp 1s forwards;
+    }
+
+    .program-card:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    .program-card:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    .program-card:nth-child(4) {
+      animation-delay: 0.9s;
+    }
+
+    .program-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .program-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .program-content {
+      padding: 20px;
+    }
+
+    .program-content h3 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #004080;
+    }
+
+    .program-content p {
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    footer {
+      background: #38003c;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+    <header class="navbar">
+   
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="2.html">About Us</a></li>
+                <li><a class="active" href="3.html">Programs</a></li>
+                <li><a href="4.html">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<header>
+  <h1>Our Programs</h1>
+  <p>Empowering students through diverse academic and extracurricular paths</p>
+</header>
+
+<section class="programs-container">
+  <div class="program-card">
+    <img src="./124.jfif" alt="Academic Excellence">
+    <div class="program-content">
+      <h3>Academic Excellence</h3>
+      <p>Our core academic program focuses on STEM, humanities, and the arts, with personalized learning and mentorship at every level.</p>
+    </div>
+  </div>
+
+  <div class="program-card">
+    <img src="./123.jfif" alt="Sports & Athletics">
+    <div class="program-content">
+      <h3>Sports & Athletics</h3>
+      <p>We nurture physical health and sportsmanship through structured PE programs and competitive athletics.</p>
+    </div>
+  </div>
+
+  <div class="program-card">
+    <img src="./arts.jfif" alt="Creative Arts">
+    <div class="program-content">
+      <h3>Creative Arts</h3>
+      <p>Students explore their creativity through music, drama, painting, and digital media in a well-equipped arts department.</p>
+    </div>
+  </div>
+
+  <div class="program-card">
+    <img src="./qw.jfif" alt="Technology & Innovation">
+    <div class="program-content">
+      <h3>Technology & Innovation</h3>
+      <p>We offer computer skills, coding, and entrepreneurship courses to prepare students for the digital future.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 MACOSS SSEMBABULE
+</footer>
+
+</body>
+</html>

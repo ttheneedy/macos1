@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - Green Valley High School</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #38003c;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .about {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #004080;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    .navbar {
+    background-color: #031e4b; /* Premier League background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px #38003c;
+}
+
+.navbar img {
+    height: 50px; /* Adjust as needed */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white; /* White text color */
+    text-decoration: none;
+    font-size: 1.1rem; /* Font size */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+    h2 {
+      color: #004080;
+      margin-bottom: 40px;
+    }
+
+    .tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .level {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .person {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 160px;
+      transition: transform 0.3s ease;
+    }
+
+    .person:hover {
+      transform: scale(1.05);
+    }
+
+    .person img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .person h4 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #004080;
+    }
+
+    .person p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+    <header class="navbar">
+   
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="2.html">About Us</a></li>
+                <li><a href="3.html">Programs</a></li>
+                <li><a href="4.html">Admissions</a></li>
+                <li><a href="5.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<header>
+  <h1>MACOS</h1>
+  <p>Inspiring Learning. Building Futures.</p>
+</header>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p>
+    Mateete Comprehensive Seed Secondary School is a community of learners dedicated to academic excellence, creativity, and integrity. 
+    Established in 1995, we have consistently provided a nurturing environment for students to grow, explore, and succeed.
+  </p>
+  
+</section>
+<section class="principal" style="padding: 40px 20px; background-color: #ffffff; max-width: 900px; margin: auto; text-align: center;">
+    <h2>Headmaster's Remarks</h2>
+    <img src="principal.jpg" alt="Principal" style="width: 150px; border-radius: 50%; margin: 20px 0;">
+    <p style="font-style: italic; max-width: 700px; margin: auto;">
+      "At Mateete Comprehensive Seed Secondary School, we believe that every student has unique potential. 
+      Our goal is to provide a nurturing environment that fosters creativity, curiosity, 
+      and character. We are proud of our academic achievements and even prouder of the 
+      compassionate individuals we help shape every day."
+    </p>
+    <p style="margin-top: 10px;"><strong>– Mr. Ssendagire Hamuza</strong></p>
+  </section>
+  <iframe
+  src="https://www.google.com/maps?q=Mateete%20Comprehensive%20Seed%20Secondary%20School%2C%20Mateete%2C%20Uganda&output=embed"
+  width="100%"
+  height="400"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+<section class="slideshow-container">
+  <img class="slide" src="./12.jfif"alt="Campus view">
+  <img class="slide" src="./123.jfif" alt="Students learning">
+  <img class="slide" src="./124.jfif" alt="Science lab">
+
+  <div class="dots">
+    <span class="dot" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
+  </div>
+</section>
+<h2 style="text-align: center;">School Administrative Hierarchy</h2>
+
+<div class="tree">
+  <!-- Headmaster -->
+  <div class="level">
+    <div class="person">
+      <img src="headmaster.jpg" alt="Headmaster">
+      <h4>Mr. Ssendagire Hamuza</h4>
+      <p>Headmaster</p>
+    </div>
+  </div>
+
+  <!-- Deputy Headmaster -->
+  <div class="level">
+    <div class="person">
+      <img src="deputy.jpg" alt="Deputy Headmaster">
+      <h4>Mr. Walusimbi Ivan</h4>
+      <p>Deputy Headmaster</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="person">
+      <img src="deputy.jpg" alt="Deputy Headmaster">
+      <h4>Mrs. Kisaakye</h4>
+      <p>Deputy Headmaster</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="person">
+      <img src="deputy.jpg" alt="Deputy Headmaster">
+      <h4>Mr. Balina</h4>
+      <p>Deputy Headmaster</p>
+    </div>
+  </div>
+
+  <!-- Directors of Studies -->
+  <div class="level">
+    <div class="person">
+      <img src="dos1.jpg" alt="Director of Studies">
+      <h4>Mrs. Lukia</h4>
+      <p>Director of Studies - O Level</p>
+    </div>
+    <div class="person">
+      <img src="dos2.jpg" alt="Director of Studies">
+      <h4>Mr. </h4>
+      <p>Director of Studies - A Level</p>
+    </div>
+  </div>
+</div>
+
+<footer style="
+  background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+">
+  &copy; Mateete Comprehensive Seed Secondary School · All rights reserved · Powered by Matchday Spirit
+</footer>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
+
+  function showSlide(n) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      dots[i].classList.remove("active");
+    }
+    slides[n].style.display = "block";
+    dots[n].classList.add("active");
+    currentSlide = n;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 4000); // Auto-slide every 4 seconds
+
+  // Initialize
+  showSlide(currentSlide);
+</script>
+
+</body>
+</html>

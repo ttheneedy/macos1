@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATEETE COMPREHENSIVE SEED SECONDARY SCHOOL</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+   .body1 {
+  background-color: #f3f4f6; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  animation: bounce 1s infinite; /* Continuous bounce effect */
+}
+
+.logo {
+  width: 150px; /* Adjust logo size as needed */
+  margin-bottom: 20px; /* Space between logo and text */
+}
+
+.title {
+  font-size: 2.5rem; /* Large font size */
+  color: rgb(196, 193, 152); /* Font color to stand out */
+  animation: fadeIn 2s ease-in; /* Fade-in effect */
+}
+
+/* Keyframes for the fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px); /* Slide in from above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for the bounce effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Half bounce height */
+  }
+}
+
+.body1 {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #031e4b; /* Premier League background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px #38003c;
+}
+
+.navbar img {
+    height: 50px; /* Adjust as needed */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white; /* White text color */
+    text-decoration: none;
+    font-size: 1.1rem; /* Font size */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+footer {
+    background-color: #38003c; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.column {
+    flex: 1; /* Equal width columns */
+    padding: 0 20px; /* Space between columns */
+}
+
+.column h3 {
+    margin-bottom: 15px; /* Space below headings */
+}
+
+.column a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Links on separate lines */
+    margin: 5px 0; /* Spacing between links */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.column a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.footer-logo {
+    width: 100px; /* Adjust logo size as needed */
+    margin-bottom: 20px; /* Space below logo */
+}
+.slideshow-wrapper {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      height: 500px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transform: translateX(100%);
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide.active {
+      opacity: 1;
+      transform: translateX(0);
+      z-index: 1;
+    }
+
+    .slide.prev {
+      transform: translateX(-100%);
+    }
+    .snake-welcome {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 120px;
+  animation: strikeIn 5.5s forwards;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transform: scale(0.8) translateX(-100vw);
+  background: linear-gradient(90deg, #0548b4, #3804b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes strikeIn {
+  0% {
+    transform: scale(0.8) translateX(-100vw);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1) translateX(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4) translateX(0);
+    opacity: 0;
+  }
+}
+#cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ff3c00;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+}
+
+</style>
+</head>
+  <header class="navbar">
+   
+    <nav>
+        <ul class="nav-links">
+            <li><a class="active" href="1.html">Home</a></li>
+            <li><a href="2.html">About Us</a></li>
+            <li><a href="3.html">Programs</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="snake-welcome">In the heart of Ssembabule lies</div>
+
+<div class="body1">
+  <div class="container">
+    <img src="./mat.png" alt="School Logo" class="logo"> <!-- Replace with your logo path -->
+    <div class="title">MATEETE COMPREHENSIVE SEED SECONDARY SCHOOL</div>
+  </div>
+</div>
+
+<div id="cursor-dot"></div>
+
+<section class="stats" style="background-color: #f0f8ff; padding: 40px 20px; text-align: center;">
+  <h2>Our School in Numbers</h2>
+  <div style="display: flex; justify-content: center; gap: 50px; margin-top: 30px;">
+    <div>
+      <h3 style="font-size: 48px; color: #004080;" id="students">0</h3>
+      <p>Students</p>
+    </div>
+    <div>
+      <h3 style="font-size: 48px; color: #004080;" id="staff">0</h3>
+      <p>Staff Members</p>
+    </div>
+  </div>
+</section>
+<div class="slideshow-wrapper">
+  <div class="slide active"><img src="./123.jfif" alt="Slide 1"></div>
+  <div class="slide"><img src="./124.jfif" alt="Slide 2"></div>
+  <div class="slide"><img src="./125.jfif" alt="Slide 3"></div>
+</div>
+<footer>
+  <div class="column">
+      <img src="./badge-removebg-preview.png" alt="School Logo" class="footer-logo"> <!-- Replace with your logo path -->
+      <p>MATEETE COMPREHENSIVE SEED SECONDARY SCHOOL</p>
+  </div>
+  <div class="column">
+      <h3>About Us</h3>
+      <a href="#history">History</a>
+      <a href="#mission">Mission & Vision</a>
+      <a href="#team">Our Team</a>
+      <a href="#careers">Careers</a>
+  </div>
+  <div class="column">
+      <h3>Programs</h3>
+      <a href="#academic">Academic Programs</a>
+      <a href="#sports">Sports</a>
+      <a href="#arts">Arts & Culture</a>
+      <a href="#extracurricular">Extracurricular Activities</a>
+  </div>
+  <div class="column">
+      <h3>Contact Us</h3>
+      <a href="#location">Location</a>
+      <a href="#inquiries">Inquiries</a>
+      <a href="#support">Support</a>
+      <a href="#newsletter">Newsletter Signup</a>
+  </div>
+</footer>
+<script>
+function animateCounter(id, end, duration) {
+  let start = 0;
+  const increment = end / (duration / 10);
+  const obj = document.getElementById(id);
+
+  const counter = setInterval(() => {
+    start += increment;
+    if (start >= end) {
+      obj.textContent = end;
+      clearInterval(counter);
+    } else {
+      obj.textContent = Math.ceil(start);
+    }
+  }, 10);
+}
+
+window.addEventListener("load", () => {
+  animateCounter("students", 850, 2000); // 850 students
+  animateCounter("staff", 75, 2000);     // 75 staff members
+});
+</script>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let currentIndex = 0;
+
+  function showNextSlide() {
+    slides[currentIndex].classList.remove('active');
+    slides[currentIndex].classList.add('prev');
+
+    currentIndex = (currentIndex + 1) % slides.length;
+
+    slides.forEach((slide, index) => {
+      if (index !== currentIndex) {
+        slide.classList.remove('active', 'prev');
+        slide.style.zIndex = 0;
+      }
+    });
+
+    slides[currentIndex].classList.add('active');
+    slides[currentIndex].style.zIndex = 1;
+  }
+
+  setInterval(showNextSlide, 4000); // Change slide every 4 seconds
+</script>
+<script>
+  const cursorDot = document.getElementById("cursor-dot");
+
+  window.addEventListener("mousemove", e => {
+    cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  });
+</script>
+
+</html>
